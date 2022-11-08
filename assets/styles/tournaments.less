@@ -3,6 +3,33 @@
   background-color: #111111;
   border-radius: 10px;
 }
-.item{
-
+.tournaments{
+  &-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  }
+  &-item{
+    box-shadow: 0 0 5px rgba(20, 20, 20, 8);
+    background-color: #111111;
+    border-radius: 10px;
+    display: grid;
+  }
+  &-btn{
+    display: block;
+    margin: 0 auto;
+  }
+  &-img{
+    width: 192px;
+  }
+}
+@media (max-width: 1200px) {
+  .tournaments-list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .tournaments-list{
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

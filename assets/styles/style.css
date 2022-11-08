@@ -13,9 +13,6 @@
   font-size: 1.8rem;
   color: white;
 }
-.header .bg-light .navbar-brand:hover {
-  color: #5d5f60;
-}
 .header .bg-light .navbar-brand-span {
   color: #008B8B;
 }
@@ -57,9 +54,6 @@
   width: 128px;
   height: 128px;
 }
-.api {
-  height: 407px;
-}
 .cards {
   font-weight: 800;
 }
@@ -70,11 +64,47 @@
   .register {
     font-size: 0.75rem;
   }
+  .navbar-brand {
+    font-size: 1.3rem !important;
+  }
+}
+@media (max-width: 1360px) {
+  .tournaments-item > p {
+    font-size: 1rem !important;
+  }
 }
 .top-menu {
   box-shadow: 0 0 5px #141414;
   background-color: #111111;
   border-radius: 10px;
+}
+.tournaments-list {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.tournaments-item {
+  box-shadow: 0 0 5px #141414;
+  background-color: #111111;
+  border-radius: 10px;
+  display: grid;
+}
+.tournaments-btn {
+  display: block;
+  margin: 0 auto;
+}
+.tournaments-img {
+  width: 192px;
+}
+@media (max-width: 1200px) {
+  .tournaments-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .tournaments-list {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 body {
   min-width: 200px;
@@ -84,6 +114,8 @@ body {
   font-size: 18px;
 }
 ul {
+  padding: 0;
+  margin: 0;
   list-style-type: none;
 }
 .link {
