@@ -10,11 +10,14 @@
     background-color: #0a0a0a !important;
     font-size: 1.1rem;
     .navbar-brand{
-      color: @secondary-color;
       font-weight: 600;
       font-size: 1.8rem;
+      color: white;
       &:hover{
-        color: darken(@secondary-color, 10%);
+        color: darken(@primary-color, 10%);
+      }
+      &-span{
+        color: @secondary-color;
       }
     }
   }

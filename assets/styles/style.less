@@ -2,13 +2,13 @@
 @import "main";
 @import "vars";
 @import "adaptive";
+@import "tournaments";
 body{
   min-width: 200px;
   background-color: #0a0a0a;
   color: #76787a;
-  font-family: MontserratSemiBold, sans-serif;
+  font-family: "Roboto Light", sans-serif;
   font-size: 18px;
-  overflow-x: hidden;
 }
 ul{
   list-style-type: none;
@@ -37,7 +37,7 @@ ul{
   width: 30%;
   min-width: 100px;
   border: 1px solid @secondary-color;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: @secondary-color;
   color: darken(#ffffff, 25%);
   &:focus, &:hover{
