@@ -39,9 +39,6 @@
   text-shadow: 0 0 20px rgba(0, 0, 0, 0.35);
   font-weight: 600;
 }
-.welcome span {
-  color: #008B8B;
-}
 .register {
   font-size: 0.8rem;
 }
@@ -56,6 +53,9 @@
 }
 .cards {
   font-weight: 800;
+}
+p {
+  margin-bottom: 0.7em;
 }
 @media (max-width: 420px) {
   body {
@@ -88,6 +88,8 @@
   background-color: #111111;
   border-radius: 10px;
   display: grid;
+  grid-template-rows: repeat(4, min-content);
+  align-content: space-between;
 }
 .tournaments-btn {
   display: block;
@@ -152,5 +154,8 @@ ul {
   color: #008B8B;
   border: 1px solid #008B8B;
   background-color: transparent;
+}
+span {
+  color: #008B8B;
 }
 /*# sourceMappingURL=style.css.map */
